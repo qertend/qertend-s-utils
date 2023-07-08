@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "qertend's utilities",
+  "author": "qertend",
+  "version": "1.0",
+  "description": "stuff",
+  "content_scripts":[
+    {
+	  "all_frames": false,
+	  "matches":["<all_urls>"],
+	  "js": ["bubble/bubble.js"]
+  },
+  {
+    "all_frames": true,
+    "matches":["<all_urls>"],
+    "js": ["scripts/darkmode.js"]
+  }],
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "icons/toolbar.png",
+    "default_area": "navbar",
+    "default_popup": "popup/menu.html" 
+  },
+  "web_accessible_resources": [
+    "bubble/bubble.svg",
+    "bubble/check.svg"
+  ]
+}
