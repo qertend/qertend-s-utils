@@ -16,6 +16,4 @@
     bubble.style.bottom = "2em";
 
     document.body.appendChild(bubble);
-
-
 }
