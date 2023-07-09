@@ -3,7 +3,7 @@
   "name": "qertend's utilities",
   "author": "qertend",
   "version": "1.0",
-  "description": "stuff",
+  "description": "A collection of various little tools and funnies",
   "icons": {
     "48": "icons/icon48.png",
     "96": "icons/icon96.png"
