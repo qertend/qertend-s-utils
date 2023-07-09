@@ -8,7 +8,7 @@
     {
 	  "all_frames": false,
 	  "matches":["<all_urls>"],
-	  "js": ["bubble/bubble.js"]
+	  "js": ["bubble/bubble.js", "scripts/biscuit.js"]
   },
   {
     "all_frames": true,
