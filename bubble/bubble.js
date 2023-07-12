@@ -1,5 +1,7 @@
-() => {
-    if (document.hasrun) return;
+function bubble() {
+    if (document.hasrun) {
+        return;
+    };
     document.hasrun = true;
 
     let style_main = "color:orange;";
@@ -14,6 +16,19 @@
     bubble.style.position = "fixed";
     bubble.style.right = "2em";
     bubble.style.bottom = "2em";
+    bubble.style.zIndex = 9999;
+
+    bubble.style.transition = "all 0.5s ease-in";
 
     document.body.appendChild(bubble);
+
+    bubble.addEventListener("click", clicked);
+
+    function clicked() {
+        console.log("clicked");
+        bubble.style.transform = "translate(5em, 5em) scale(0, 0) rotate(1.0turn)";
+    }
+
+
 }
+bubble();
