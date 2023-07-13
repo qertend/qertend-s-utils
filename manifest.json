@@ -12,15 +12,10 @@
     {
 	  "all_frames": false,
 	  "matches":["<all_urls>"],
-	  "js": ["bubble/bubble.js", "scripts/active.js", "scripts/biscuit.js"]
-  },
-  {
-    "all_frames": true,
-    "matches":["<all_urls>"],
-    "js": ["scripts/darkmode.js"]
+	  "js": ["bubble/bubble.js", "scripts/c6active.js", "scripts/c/biscuit.js"]
   }],
   "background": {
-    "scripts": ["scripts/background.js"],
+    "scripts": ["scripts/b/background.js", "scripts/b/darkmode.js"],
     "persistent": false,
     "type": "module"
   },

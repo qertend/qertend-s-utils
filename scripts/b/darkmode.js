@@ -6,18 +6,21 @@ browser.runtime.onMessage.addListener((response) => {
 });
 
 //dark mode
-let darkMode = false;
+var darkModeOn = false;
 
 browser.storage.local.get(["darkMode"]).then((result) => {
-    darkMode = result.darkMode;
+    darkModeOn = result.darkMode;
+    changeMode(darkModeOn);
+
 });
 
 function changeMode(state) {
+    darkModeOn = state;
     if (state) {
-        
+        browser.tabs.inserCSS({"background-color": "red", "color": "magenta"});
     }
 }
 
 browser.storage.onChanged.addListener((changes, area) => {
-    
+    if (changes.darkMode.newValue != changes.darkMode.oldValue) changeMode(changes.darkMode.newValue);
 });
