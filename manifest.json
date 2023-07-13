@@ -16,11 +16,10 @@
   }],
   "background": {
     "scripts": ["scripts/b/background.js", "scripts/b/darkmode.js"],
-    "persistent": false,
-    "type": "module"
+    "persistent": false
   },
   "permissions": [
-    "activeTab", "tabs", "storage"
+    "<all_urls>", "activeTab", "tabs", "storage"
   ],
   "browser_action": {
     "default_icon": "icons/toolbar.png",

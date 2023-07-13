@@ -15,9 +15,10 @@ browser.storage.local.get(["darkMode"]).then((result) => {
 });
 
 function changeMode(state) {
+    let darkCSS = "body {background-color: red; color: magenta}";
     darkModeOn = state;
     if (state) {
-        browser.tabs.inserCSS({"background-color": "red", "color": "magenta"});
+        browser.tabs.insertCSS({code: darkCSS});
     }
 }
 
