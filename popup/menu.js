@@ -1,6 +1,5 @@
 let darModeButton = document.getElementById("dark");
 darModeButton.addEventListener("click", darkMode);
-let darkModeOn = false;
 
 function darkMode(){
     browser.storage.local.get(["darkMode"]).then((result) => {
